@@ -134,7 +134,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 },
             }}>
-            <div className="w-full before:absolute before:-bottom-24 before:left-[350px] before:z-[-1] md:before:content-evolvetext">
+            <div className="w-full before:absolute before:-bottom-24 before:left-[350px] before:z-[-1] xl:before:content-evolvetext">
               <img
                 className="w-full rounded-3xl"
                 alt="contact-us"

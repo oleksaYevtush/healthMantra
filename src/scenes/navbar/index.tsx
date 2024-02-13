@@ -68,7 +68,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               <XMarkIcon className="h-6 w-6 text-gray-400" />
             </button>
           </div>
-          <div className="mr-8 flex flex-col gap-10 text-2xl">
+          <div className="mr-8 flex flex-col gap-10 text-2xl pl-5">
             <Link
               page="Home"
               selectedPage={selectedPage}
