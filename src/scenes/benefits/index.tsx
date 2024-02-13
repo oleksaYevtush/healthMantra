@@ -77,7 +77,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
         </motion.div>
         <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
           <img
-            className="mx-auto"
+            className="mx-auto mb-4"
             alt="page"
             src={BenefitsPageGraphic}
           />
@@ -92,8 +92,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                   variants={{
                     hidden: { opacity: 0, x: 50 },
                     visible: { opacity: 1, x: 0 },
-                  }}
-                >
+                  }}>
                   <HText>
                     MILLIONS OF HAPPY MEMBERS GETTING{" "}
                     <span className="text-primary-500">FIT</span>
