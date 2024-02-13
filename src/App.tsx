@@ -11,6 +11,7 @@ import { useSpring, animated } from 'react-spring';
 import { useScroll } from 'react-spring';
 import Lenis from '@studio-freight/lenis';
 import leafIcon from "@/assets/leaf.png";
+import AnimatedCursor from "react-animated-cursor";
 
 const X_LINES = 40;
 const INITIAL_WIDTH = 20;
@@ -54,67 +55,81 @@ function App() {
   
   const { scrollYProgress } = useScroll();
   
-  
   return (
-    <div
-      ref={scrollRef}
-      className={`app bg-[#e4efea] select-none ${isTopOfPage ? 'top-of-page' : ''}`}>
-      <div className="wavy-progress-bar left">
-        {Array.from({ length: X_LINES }).map((_, i) => (
-          <animated.div
-            key={i}
-            className="bar"
-            style={{
-              width: scrollYProgress.to((scrollP) => {
-                const percentilePosition = (i + 1) / X_LINES;
-                return (
-                  INITIAL_WIDTH / 4 +
-                  60 *
-                    Math.cos(
-                      ((percentilePosition - scrollP) * Math.PI) / 1.5
-                    ) ** 32
-                );
-              }),
-            }}
+    <div>
+      <AnimatedCursor
+        innerSize={12}
+        outerSize={50}
+        innerScale={1}
+        outerScale={1.5}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: "#fe974e99",
+        }}
+        outerStyle={{
+          border: "2px solid #fe974e99",
+        }}
+      />
+      <div
+        ref={scrollRef}
+        className={`app bg-[#e4efea] select-none ${isTopOfPage ? 'top-of-page' : ''}`}>
+        <div className="wavy-progress-bar left">
+          {Array.from({ length: X_LINES }).map((_, i) => (
+            <animated.div
+              key={i}
+              className="bar"
+              style={{
+                width: scrollYProgress.to((scrollP) => {
+                  const percentilePosition = (i + 1) / X_LINES;
+                  return (
+                    INITIAL_WIDTH / 4 +
+                    60 *
+                      Math.cos(
+                        ((percentilePosition - scrollP) * Math.PI) / 1.5
+                      ) ** 32
+                  );
+                }),
+              }}
+            />
+          ))}
+        </div>
+        <div className="wavy-progress-bar right">
+          {Array.from({ length: X_LINES }).map((_, i) => (
+            <animated.div
+              key={i}
+              className="bar"
+              style={{
+                width: scrollYProgress.to((scrollP) => {
+                  const percentilePosition = 1 - (i + 1) / X_LINES;
+                  return (
+                    INITIAL_WIDTH / 4 +
+                    60 *
+                      Math.cos(
+                        ((percentilePosition - scrollP) * Math.PI) / 1.5
+                      ) ** 32
+                  );
+                }),
+              }}
+            />
+          ))}
+        </div>
+        <div className="leaf-icon" onClick={handleLeafClick}>
+          <img src={leafIcon} alt="Leaf Icon" />
+        </div>
+        <div className="content">
+          <Navbar
+            isTopOfPage={isTopOfPage}
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
           />
-        ))}
-      </div>
-      <div className="wavy-progress-bar right">
-        {Array.from({ length: X_LINES }).map((_, i) => (
-          <animated.div
-            key={i}
-            className="bar"
-            style={{
-              width: scrollYProgress.to((scrollP) => {
-                const percentilePosition = 1 - (i + 1) / X_LINES;
-                return (
-                  INITIAL_WIDTH / 4 +
-                  60 *
-                    Math.cos(
-                      ((percentilePosition - scrollP) * Math.PI) / 1.5
-                    ) ** 32
-                );
-              }),
-            }}
-          />
-        ))}
-      </div>
-      <div className="leaf-icon" onClick={handleLeafClick}>
-        <img src={leafIcon} alt="Leaf Icon" />
-      </div>
-
-      <div className="content">
-        <Navbar
-          isTopOfPage={isTopOfPage}
-          selectedPage={selectedPage}
-          setSelectedPage={setSelectedPage}
-        />
-        <Home setSelectedPage={setSelectedPage} />
-        <Benefits setSelectedPage={setSelectedPage} />
-        <HorizontalCarousel />
-        <JoinUs />
-        <ContactUs setSelectedPage={setSelectedPage} />
-        <Footer />
+          <Home setSelectedPage={setSelectedPage} />
+          <Benefits setSelectedPage={setSelectedPage} />
+          <HorizontalCarousel />
+          <JoinUs />
+          <ContactUs setSelectedPage={setSelectedPage} />
+          <Footer />
+        </div>
       </div>
     </div>
   );
