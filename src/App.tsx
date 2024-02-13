@@ -58,8 +58,7 @@ function App() {
   return (
     <div
       ref={scrollRef}
-      className={`app bg-[#e4efea] select-none ${isTopOfPage ? 'top-of-page' : ''}`}
-    >
+      className={`app bg-[#e4efea] select-none ${isTopOfPage ? 'top-of-page' : ''}`}>
       <div className="wavy-progress-bar left">
         {Array.from({ length: X_LINES }).map((_, i) => (
           <animated.div

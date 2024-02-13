@@ -28,7 +28,6 @@ const HorizontalScrollCarousel = () => {
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
-
   const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   return (
@@ -48,8 +47,7 @@ const Card = ({ card }: { card: CardType }) => {
   return (
     <div
       key={card.id}
-      className="group relative h-[350px] w-[350px] overflow-hidden"
-    >
+      className="group relative h-[350px] w-[350px] overflow-hidden">
       <div
         style={{
           backgroundImage: `url(${card.image})`,
