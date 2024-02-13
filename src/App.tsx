@@ -63,12 +63,11 @@ function App() {
         innerScale={1}
         outerScale={1.5}
         outerAlpha={0}
-        hasBlendMode={true}
         innerStyle={{
           backgroundColor: "#fe974e99",
         }}
         outerStyle={{
-          border: "2px solid #fe974e99",
+          border: "3px solid #fe974e99",
         }}
       />
       <div
