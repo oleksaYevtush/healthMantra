@@ -312,20 +312,3 @@ body {
 .leaf-icon:hover {
   transform: scale(1.1);
 }
-
-.footer-container {
-  position: relative;
-  height: 150px;
-  width: 300px;
-}
-
-.map-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-
-

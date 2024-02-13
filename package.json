@@ -24,6 +24,8 @@
     "lenis": "^0.0.2",
     "locomotive-scroll": "^4.1.4",
     "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-animated-cursor": "^2.11.2",
+    "react-creative-cursor": "^1.2.7",
     "react-hook-form": "^7.40.0",
     "react-leaflet-kml": "^2.1.1",
     "react-parallax-tilt": "^1.7.190",
