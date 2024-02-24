@@ -12,6 +12,7 @@ import { useScroll } from 'react-spring';
 import Lenis from '@studio-freight/lenis';
 import leafIcon from "@/assets/leaf.png";
 import AnimatedCursor from "react-animated-cursor";
+import Loader from '@/scenes/loader';
 
 const X_LINES = 40;
 const INITIAL_WIDTH = 20;
@@ -21,13 +22,17 @@ function App() {
     SelectedPage.Home
   );
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true); 
   const scrollRef = useRef<HTMLDivElement>(null);
-
   const handleLeafClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
+    const handleLoadComplete = () => {
+      setLoading(false);
+    };
+    setTimeout(handleLoadComplete, 3000);
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
@@ -45,7 +50,6 @@ function App() {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
-
     requestAnimationFrame(raf);
 
     return () => {
@@ -57,6 +61,7 @@ function App() {
   
   return (
     <div>
+      {loading && <Loader />}
       <AnimatedCursor
         innerSize={12}
         outerSize={50}
