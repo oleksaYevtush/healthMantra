@@ -1,5 +1,5 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
-import { SelectedPage } from "@/shared/types";
+import { SelectedPage } from "../../shared/types";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/HomePageText.png";
 import HomePage from "@/assets/HomePage.png";
@@ -60,7 +60,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </p>
           </motion.div>
           <motion.div
-            className="mt-8 flex items-center gap-8"
+            className="mt-8 flex items-center gap-8 sm:flex sm:justify-center xs:flex xs:justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -70,7 +70,7 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}>
             <ActionButton setSelectedPage={() => setSelectedPage(SelectedPage.ContactUs)}>
-                Join Now
+              Join Now
             </ActionButton>
           </motion.div>
         </div>
