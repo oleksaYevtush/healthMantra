@@ -35,7 +35,7 @@ const Home = ({ setSelectedPage }: Props) => {
     : '';
 
   return (
-    <section id="home" className="gap-16 py-10 bg-[#e4efea]">
+    <section id="home" className="gap-16 py-10 sl:py-6 bg-[#e4efea]">
       <motion.div
         className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
         onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
@@ -60,7 +60,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </p>
           </motion.div>
           <motion.div
-            className="mt-8 flex items-center gap-8 sm:flex sm:justify-center xs:flex xs:justify-center"
+            className="mt-8 flex items-center gap-8 sm:flex sm:justify-center xs:flex xs:justify-center sl:flex sl:justify-center"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -75,7 +75,7 @@ const Home = ({ setSelectedPage }: Props) => {
           </motion.div>
         </div>
         <div
-          className="flex basis-3/5 justify-center md:z-10 sm:mt-8 xs:mt-8
+          className="flex basis-3/5 justify-center md:z-10 sm:mt-8 xs:mt-8 sl:mt-7
               md:ml-40 md:mt-16 md:justify-items-end">
           <img alt="home-page" src={HomePage} />
         </div>
