@@ -75,7 +75,7 @@ const Home = ({ setSelectedPage }: Props) => {
           </motion.div>
         </div>
         <div
-          className="flex basis-3/5 justify-center md:z-10
+          className="flex basis-3/5 justify-center md:z-10 sm:mt-8 xs:mt-8
               md:ml-40 md:mt-16 md:justify-items-end">
           <img alt="home-page" src={HomePage} />
         </div>
