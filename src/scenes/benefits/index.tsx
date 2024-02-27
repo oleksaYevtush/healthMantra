@@ -40,7 +40,7 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="health" className="mx-auto min-h-full w-5/6 pt-[100px]">
+    <section id="health" className="mx-auto min-h-full w-5/6 pt-[100px] sl:pt-[50px]">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
         <motion.div
