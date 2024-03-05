@@ -2,7 +2,9 @@
 
 The <a href="https://health-mantra.vercel.app/" targer="_blank">Website</a> dedicated to yoga)
 
-<a href="https://health-mantra.vercel.app/" targer="_blank" alt='Health Mantra'><img src="https://ibb.co/c2PgZgZ" alt="image"></a>
+<a href="https://health-mantra.vercel.app/" targer="_blank" alt='Health Mantra'>
+<br></br>
+<img src="https://ibb.co/c2PgZgZ" alt="image"></a>
 
 ## 📃 Technologies
 
@@ -15,12 +17,13 @@ The <a href="https://health-mantra.vercel.app/" targer="_blank">Website</a> dedi
 - ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%693BDF.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
 
 ## Description
-
+<li>
 ✅ The page implements a carousel of sliders with horizontal scrolling.
 ✅ The site is adaptive and cross-browser for different sizes 320px, 480px, 768px, 1060px.
 ✅ Provided contact form validation using react-hook-form and Tailwind CSS to stylize validation errors.
 ✅ Used Lenis library for smooth scrolling throughout the site.
 ✅ The layout is semantic and valid.
+</li>
 
 ## Getting Started
 
