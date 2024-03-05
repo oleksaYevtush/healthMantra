@@ -17,7 +17,6 @@
     "@types/geojson": "^7946.0.14",
     "animejs": "^3.2.2",
     "emailjs-com": "^3.2.0",
-    "formik": "^2.4.5",
     "framer-motion": "^7.10.3",
     "gsap": "^3.12.4",
     "keen-slider": "^6.8.6",

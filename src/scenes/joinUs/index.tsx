@@ -34,7 +34,7 @@ export default function App() {
   );
 
   return (
-    <div className="wrapper">
+    <section id="joinus" className="wrapper">
       <div className="scene">
         <div className="carousel keen-slider" ref={sliderRef}>
           <div className="carousel__cell number-slide1">Harmony  </div>
@@ -48,6 +48,6 @@ export default function App() {
           <img src={arrowIcon} alt="Arrow Icon" className="w-[35px] h-[35px]" style={{ zIndex: 1000 }} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

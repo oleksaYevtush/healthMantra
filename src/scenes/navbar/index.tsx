@@ -1,9 +1,11 @@
 import { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";  
+import { Bars3Icon } from "@heroicons/react/24/solid";
 import Logo from "@/assets/Logo.png";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
+import CrossIcon from "@/assets/crossIcon.png";
 
 type Props = {
   isTopOfPage: boolean;
@@ -20,8 +22,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   return (
     <nav>
       <div
-        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-3 xs:py-6`}
-      >
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-3 xs:py-6`}>
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {isAboveMediumScreens ? (
@@ -52,7 +53,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               </>
             ) : (
               <button
-                className="rounded-full bg-secondary-500 p-6"
+                className="rounded-full bg-secondary-500 p-5"
                 onClick={() => setIsMenuToggled(!isMenuToggled)}>
                 <Bars3Icon className="h-7 w-7 text-white" />
               </button>
@@ -61,10 +62,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         </div>
       </div>
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 top-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
-          <div className="flex justify-end p-12">
+        <motion.div  
+          initial={{ opacity: 0, x: "100%" }}  
+          animate={{ opacity: 1, x: 0 }} 
+          transition={{ type: "spring", stiffness: 150, duration: 0.5 }} 
+          className="fixed right-0 top-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+          <div className="flex justify-end p-5">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-6 w-6 text-gray-400" />
+              <img src={CrossIcon} alt="Cross Icon" className="h-20 w-20" /> 
             </button>
           </div>
           <div className="mr-8 flex flex-col gap-10 text-2xl pl-5">
@@ -89,7 +94,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             />
           </div>
-        </div>
+        </motion.div>
       )}
     </nav>
   );
