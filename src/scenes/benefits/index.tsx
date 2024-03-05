@@ -44,7 +44,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
         <motion.div
-          className="md:my-5 md:w-3/5"
+          className="md:my-5 text-center"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -52,9 +52,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
-          }}
-        >
-          <HText>Bring Happiness To Good Health!</HText>
+          }}>
+          <HText>Bring Happiness To Good <span className="text-primary-500">Health!</span></HText>
           <p className="my-5 text-base">
             If you take care of your good health, take care of your mentality and lead a healthy life with positive thoughts every day.
           </p>
@@ -94,8 +93,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                     visible: { opacity: 1, x: 0 },
                   }}>
                   <HText>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className="text-primary-500">FIT</span>
+                  MILLIONS OF DELIGHTED PARTICIPANTS ENGAGING IN{" "}
+                    <span className="text-primary-500">YOGA</span>
                   </HText>
                 </motion.div>
               </div>
