@@ -1,12 +1,10 @@
-# 🧘🏼‍♀️ Health Mantra
+## 👩‍💻 Author
+<a href='https://github.com/oleksaYevtush' target='_blank'>[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=D131F7&random=false&width=435&lines=Oleksandra+Yevtushenko)](https://git.io/typing-svg)</a>
 
-The <a href="https://health-mantra.vercel.app/" targer="_blank">Website</a> dedicated to yoga)
+Website about yoga created with TypeScript, Tailwind CSS. Using Framer - motion animation, scrolling - Lenis, Contact form: react-hook-form<br></br>
+<a href="https://health-mantra.vercel.app/" target="_blank"><img src="https://i.ibb.co/GCXx8x8/health-mantra-vercel-app-Nest-Hub-Max.png" alt="Health Mantra"/></a>
 
-<a href="https://health-mantra.vercel.app/" targer="_blank" alt='Health Mantra'>
-<br></br>
-<img src="https://ibb.co/c2PgZgZ" alt="image"></a>
-
-## 📃 Technologies
+## ✨ Technologies
 
 - ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
@@ -17,13 +15,12 @@ The <a href="https://health-mantra.vercel.app/" targer="_blank">Website</a> dedi
 - ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%693BDF.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
 
 ## Description
-<li>
-✅ The page implements a carousel of sliders with horizontal scrolling.
-✅ The site is adaptive and cross-browser for different sizes 320px, 480px, 768px, 1060px.
-✅ Provided contact form validation using react-hook-form and Tailwind CSS to stylize validation errors.
-✅ Used Lenis library for smooth scrolling throughout the site.
-✅ The layout is semantic and valid.
-</li>
+
+✅ The page implements a carousel of sliders with horizontal scrolling<br></br>
+✅ The site is adaptive and cross-browser for different sizes 320px, 480px, 768px, 1060px<br></br>
+✅ Provided contact form validation using react-hook-form and Tailwind CSS to stylize validation errors<br></br>
+✅ Used Lenis library for smooth scrolling throughout the site<br></br>
+✅ The layout is semantic and valid<br></br>
 
 ## Getting Started
 
