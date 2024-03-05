@@ -2,7 +2,7 @@
 <a href='https://github.com/oleksaYevtush' target='_blank'>[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=D131F7&random=false&width=435&lines=Oleksandra+Yevtushenko)](https://git.io/typing-svg)</a>
 
 Website about yoga created with TypeScript, Tailwind CSS. Using Framer - motion animation, scrolling - Lenis, Contact form: react-hook-form<br></br>
-<a href="https://health-mantra.vercel.app/" target="_blank"><img src="https://i.ibb.co/GCXx8x8/health-mantra-vercel-app-Nest-Hub-Max.png" alt="Health Mantra"/></a>
+<a href="https://health-mantra.vercel.app/" target="_blank"><img src="https://i.ibb.co/1mP0WKh/Health-Mantra-Mockup.png" alt="Health-Mantra-Mockup" border="0"></a>
 
 ## ✨ Technologies
 
