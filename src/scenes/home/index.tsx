@@ -69,7 +69,7 @@ const Home = ({ setSelectedPage }: Props) => {
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <ActionButton setSelectedPage={() => setSelectedPage(SelectedPage.HorizontalCarousel)}>
+            <ActionButton setSelectedPage={() => setSelectedPage(SelectedPage.ContactUs)}>
               Join Now
             </ActionButton>
           </motion.div>
