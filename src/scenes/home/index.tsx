@@ -1,5 +1,5 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
-import { SelectedPage } from "../../shared/types";
+import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/HomePageText.png";
 import HomePage from "@/assets/HomePage.png";
@@ -69,7 +69,7 @@ const Home = ({ setSelectedPage }: Props) => {
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
             }}>
-            <ActionButton setSelectedPage={() => setSelectedPage(SelectedPage.ContactUs)}>
+            <ActionButton setSelectedPage={() => setSelectedPage(SelectedPage.HorizontalCarousel)}>
               Join Now
             </ActionButton>
           </motion.div>

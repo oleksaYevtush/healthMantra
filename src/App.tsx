@@ -7,7 +7,7 @@ import HorizontalCarousel from "@/scenes/HorizontalCarousel";
 import ContactUs from "@/scenes/contactUs";
 import Footer from "@/scenes/footer";
 import { SelectedPage } from "@/shared/types";
-import { useSpring, animated } from 'react-spring';
+import { animated } from 'react-spring';
 import { useScroll } from 'react-spring';
 import Lenis from '@studio-freight/lenis';
 import leafIcon from "@/assets/leaf.png";

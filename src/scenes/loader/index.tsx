@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../index.css';  
-import caffeineRushTeaGif from '../../assets/gif/caffeine-rush-tea.gif';
+import yogaDogGif from '../../assets/gif/yoga-dog.gif';
 
 const Loader: React.FC = () => {
   return (
     <div className="loader">
-      <img src={caffeineRushTeaGif} alt="Loading..." width="200" height="350" />
+      <img src={yogaDogGif} alt="Loading..." width="200" height="350" />
     </div>
   );
 };
